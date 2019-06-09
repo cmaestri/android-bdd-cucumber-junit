@@ -1,4 +1,4 @@
-package com.cmaestri.bddcucumberjunit
+package com.cmaestri.androidbddcucumberjunit
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity

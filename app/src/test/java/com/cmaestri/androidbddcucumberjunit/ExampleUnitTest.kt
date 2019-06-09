@@ -1,4 +1,4 @@
-package com.cmaestri.bddcucumberjunit
+package com.cmaestri.androidbddcucumberjunit
 
 import org.junit.Test
 
