@@ -37,13 +37,13 @@ class BellyStepDefs : En {
         }
 
         val alreadyHadThisManyCukes = 1
-        Given("I have (\\d+) cukes in my belly") { n: Long ->
+        Given("I have {int} cukes in my belly") { i: Int ->
             Assert.assertEquals(1, alreadyHadThisManyCukes)
-            Assert.assertEquals(42L, n)
+            Assert.assertEquals(42, i)
         }
 
         val localState = "hello"
-        Then("I really have (\\d+) cukes in my belly") { i: Int ->
+        Then("I really have {int} cukes in my belly") { i: Int ->
             Assert.assertEquals(42, i)
             Assert.assertEquals("hello", localState)
         }
@@ -55,14 +55,14 @@ class BellyStepDefs : En {
         val localInt = 1
         Given("A statement with a scoped argument$") { Assert.assertEquals(2, localInt + 1) }
 
-        Given("I will give you (\\d+) and (\\d+.\\d+) and (.+) and (\\d+)") { a: Int, b: Float, c: String, d: Int ->
+        Given("I will give you {int} and {float} and {string} and {word}") { a: Int, b: Float, c:String, d:String ->
             Assert.assertEquals(1, a)
             Assert.assertEquals(2.2f, b)
-            Assert.assertEquals("three", c)
-            Assert.assertEquals(4, d)
+            Assert.assertEquals("three and four", c)
+            Assert.assertEquals("five", d)
         }
         Given("I will give you {int}") { i:Int ->
-            Assert.assertEquals(1, i)
+            Assert.assertEquals(2, i)
         }
     }
 }

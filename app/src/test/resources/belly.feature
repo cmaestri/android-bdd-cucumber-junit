@@ -16,7 +16,7 @@ Feature: Kotlin
     Given A statement with a body expression
 
   Scenario: Multi-param lambdas
-    Given I will give you 1 and 2.2 and three and 4
+    Given I will give you 1 and 2.2 and "three and four" and five
 
   Scenario: use a table
     Given this data table:
@@ -25,4 +25,4 @@ Feature: Kotlin
       | Donald | Duck     |
 
   Scenario: a scenario with a failing steps
-    Given I will give you 2
+    Given I will give you 1
