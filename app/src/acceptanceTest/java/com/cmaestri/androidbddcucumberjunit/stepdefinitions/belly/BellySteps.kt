@@ -62,7 +62,7 @@ class BellyStepDefs : En {
             Assert.assertEquals("five", d)
         }
         Given("I will give you {int}") { i:Int ->
-            Assert.assertEquals(2, i)
+            Assert.assertEquals(1, i)
         }
     }
 }

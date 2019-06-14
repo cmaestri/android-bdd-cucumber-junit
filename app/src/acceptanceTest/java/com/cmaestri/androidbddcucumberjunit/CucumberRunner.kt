@@ -6,7 +6,7 @@ import org.junit.runner.RunWith
 
 @RunWith(Cucumber::class)
 @CucumberOptions(
-    features = ["src/test/resources/"],
+    features = ["src/acceptanceTest/resources/features/"],
     glue = ["com/cmaestri/androidbddcucumberjunit/stepdefinitions/"],
     plugin = ["pretty", "html:build/report/cucumber"]
 )
