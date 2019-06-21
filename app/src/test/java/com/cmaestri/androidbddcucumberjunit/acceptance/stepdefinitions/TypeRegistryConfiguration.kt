@@ -1,6 +1,6 @@
-package com.cmaestri.androidbddcucumberjunit.stepdefinitions
+package com.cmaestri.androidbddcucumberjunit.acceptance.stepdefinitions
 
-import com.cmaestri.androidbddcucumberjunit.stepdefinitions.belly.Person
+import com.cmaestri.androidbddcucumberjunit.acceptance.stepdefinitions.belly.Person
 import cucumber.api.TypeRegistry
 import cucumber.api.TypeRegistryConfigurer
 import io.cucumber.datatable.DataTableType

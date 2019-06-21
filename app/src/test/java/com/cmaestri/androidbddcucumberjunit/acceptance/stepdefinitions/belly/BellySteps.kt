@@ -1,4 +1,4 @@
-package com.cmaestri.androidbddcucumberjunit.stepdefinitions.belly
+package com.cmaestri.androidbddcucumberjunit.acceptance.stepdefinitions.belly
 
 import cucumber.api.Scenario
 import cucumber.api.java8.En
@@ -11,7 +11,9 @@ class BellyStepDefs : En {
 
     init {
         Before { _: Scenario ->
-            Assert.assertNotSame(this, lastInstance)
+            Assert.assertNotSame(this,
+                lastInstance
+            )
             lastInstance = this
         }
 
@@ -31,7 +33,8 @@ class BellyStepDefs : En {
         }
 
         Given("this data table:") { peopleTable: DataTable ->
-            val people: List<Person> = peopleTable.asList(Person::class.java)
+            val people: List<Person> = peopleTable.asList(
+                Person::class.java)
             Assert.assertEquals("Aslak", people[0].first)
             Assert.assertEquals("Hellesoy", people[0].last)
         }
